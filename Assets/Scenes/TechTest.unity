@@ -182,7 +182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49923401}
-  m_LocalRotation: {x: 0.33559906, y: -0.3841318, z: 0.15228418, w: 0.8465374}
+  m_LocalRotation: {x: 0.33559904, y: -0.3841318, z: 0.15228419, w: 0.8465374}
   m_LocalPosition: {x: 23.988419, y: 9.870003, z: -13.565929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1211,7 +1211,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.33559906, y: -0.3841318, z: 0.15228418, w: 0.8465374}
+  m_LocalRotation: {x: 0.33559904, y: -0.3841318, z: 0.15228419, w: 0.8465374}
   m_LocalPosition: {x: 23.988419, y: 9.870003, z: -13.565929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1593,15 +1593,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6fd20800599b14fa0dab3636adf3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  shootForce: 0
-  upwardForce: 0
-  timeBetweenShooting: 0
-  spread: 0
-  reloadTime: 0
+  _aimLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  bullet: {fileID: 4066542750641720061, guid: ccce1d8c0f892bd4d9c37a6a81a3a918, type: 3}
+  shootForce: 40
+  upwardForce: 0.2
+  timeBetweenShooting: 0.1
+  spread: 0.7
+  reloadTime: 1
   timeBetweenShots: 0
-  magazineSize: 0
-  bulletsPerTap: 0
+  magazineSize: 50
+  bulletsPerTap: 5
   allowButtonHold: 0
   playerRb: {fileID: 106236158}
   recoilForce: 0

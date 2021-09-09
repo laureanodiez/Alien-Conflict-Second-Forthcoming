@@ -44,6 +44,7 @@
      <Compile Include="Assets\Scripts\CursorModos.cs" />
      <Compile Include="Assets\Scripts\CustomBullet.cs" />
      <Compile Include="Assets\Scripts\Moneda.cs" />
+     <Compile Include="Assets\Scripts\BulletCollide.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Archivos de programa\Unity\2020.1.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
