@@ -42,10 +42,10 @@
      <Compile Include="Assets\Scripts\ProjectileGunTutorial.cs" />
      <Compile Include="Assets\Scripts\Display.cs" />
      <Compile Include="Assets\Scripts\CamaraCompletaCasero.cs" />
+     <Compile Include="Assets\Scripts\Barril.cs" />
      <Compile Include="Assets\Scripts\CursorModos.cs" />
      <Compile Include="Assets\Scripts\CustomBullet.cs" />
      <Compile Include="Assets\Scripts\Moneda.cs" />
-     <Compile Include="Assets\Scripts\Barril.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

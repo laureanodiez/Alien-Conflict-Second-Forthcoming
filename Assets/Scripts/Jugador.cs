@@ -14,10 +14,10 @@ public class Jugador : MonoBehaviour
         puntajeJugador = puntajeJugador + valor;
     }
 
-    public void daño(int valor)
-    {
+    public void recibirDanio(int valor){
         salud = salud - valor;
     }
+
 
     public void curacion(int valor)
     {

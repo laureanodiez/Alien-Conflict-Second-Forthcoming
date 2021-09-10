@@ -4,7 +4,18 @@ using UnityEngine;
 
 public class BulletCollide : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other) {
+    public GameObject jugador;
+    public AudioClip oof;
+    public int valor = 15;
+    private void OnCollisionEnter(Collision other){
+
+        if(!other.gameObject.CompareTag("Bala")){
+            if(other.gameObject.CompareTag("Player")){
+                jugador.GetComponent<Jugador>().recibirDanio(valor);
+                AudioSource.PlayClipAtPoint(oof, transform.position, 1);
+                Destroy(gameObject);
+         }
         Destroy(gameObject);
+        }
     }
 }
