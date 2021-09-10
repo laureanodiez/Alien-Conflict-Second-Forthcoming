@@ -29,7 +29,7 @@ public class Jugador : MonoBehaviour
     {
         tiempo = tiempo + Time.deltaTime;
         if(salud < 1){
-        AudioSource.PlayClipAtPoint(clip, transform.position, 1);
+        AudioSource.PlayClipAtPoint(clip, transform.position, 2);
         Destroy(gameObject);
         }
     }

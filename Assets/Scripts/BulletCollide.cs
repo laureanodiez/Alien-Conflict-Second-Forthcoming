@@ -12,7 +12,7 @@ public class BulletCollide : MonoBehaviour
         if(!other.gameObject.CompareTag("Bala")){
             if(other.gameObject.CompareTag("Player")){
                 jugador.GetComponent<Jugador>().recibirDanio(valor);
-                AudioSource.PlayClipAtPoint(oof, transform.position, 1);
+                AudioSource.PlayClipAtPoint(oof, transform.position, 0.1f);
                 Destroy(gameObject);
          }
         Destroy(gameObject);
