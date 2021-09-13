@@ -44,11 +44,12 @@
      <Compile Include="Assets\Scripts\SeguimientoVacio.cs" />
      <Compile Include="Assets\Scripts\CamaraCompletaCasero.cs" />
      <Compile Include="Assets\Scripts\Barril.cs" />
+     <Compile Include="Assets\Scripts\NoDestruir.cs" />
      <Compile Include="Assets\Scripts\CursorModos.cs" />
      <Compile Include="Assets\Scripts\CustomBullet.cs" />
-     <Compile Include="Assets\Scripts\Moneda.cs" />
      <Compile Include="Assets\Scripts\MenuFunciones.cs" />
-     <Compile Include="Assets\Scripts\NoDestruir.cs" />
+     <Compile Include="Assets\Scripts\Moneda.cs" />
+     <Compile Include="Assets\Scripts\NoDestruirHover.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

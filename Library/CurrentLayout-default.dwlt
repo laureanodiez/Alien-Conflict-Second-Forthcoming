@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 31314
+  controlID: 9530
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 31388
+  controlID: 9531
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 31389
+  controlID: 9532
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -398,9 +398,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 10620000
-      m_LastClickedID: 25104
-      m_ExpandedIDs: a010ffffb610ffffee8effffe299ffffec99ffff229dffff2ca1ffff9aa6ffff98a7ffffa4a7ffff00a8ffffdaa9fffffaa9ffffd6aaffff04adfffff6edffff50efffff76efffff5af7fffff6f8ffff60fbfffffa3d0000ba440000de4400004245000054450000664500008845000010620000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 58f5ffff9af7ffff8c3d0000c23d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -460,9 +460,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 14.415545, y: 3.4175491, z: -9.469058}
+    m_Target: {x: 336.5191, y: 78.959, z: -102.07648}
     speed: 2
-    m_Value: {x: 14.415545, y: 3.4175491, z: -9.469058}
+    m_Value: {x: 336.5191, y: 78.959, z: -102.07648}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -488,7 +488,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -509,13 +509,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.1153058, y: -0.61001605, z: 0.09032403, w: 0.77873635}
+    m_Target: {x: 0.2420707, y: 0.0029107614, z: -0.0007263408, w: 0.970256}
     speed: 2
-    m_Value: {x: -0.1153058, y: 0.6100161, z: -0.09032403, w: -0.7787364}
+    m_Value: {x: -0.2420707, y: -0.0029107616, z: 0.0007263408, w: -0.97025603}
   m_Size:
-    m_Target: 9.6580305
+    m_Target: 192.00699
     speed: 2
-    m_Value: 9.6580305
+    m_Value: 192.00699
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -578,21 +578,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Sonido-Musica
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Sonido-Musica
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\Archivos Teo\Alien ConflictSF\Alien-Conflict-Second-Forthcoming
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a3c0000
-    m_LastClickedID: 15402
-    m_ExpandedIDs: 00000000123c0000143c000000ca9a3b
+    m_SelectedIDs: 663d0000
+    m_LastClickedID: 15718
+    m_ExpandedIDs: 00000000583d00005a3d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -620,7 +620,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000123c0000143c000000ca9a3b
+    m_ExpandedIDs: 00000000583d00005a3d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
