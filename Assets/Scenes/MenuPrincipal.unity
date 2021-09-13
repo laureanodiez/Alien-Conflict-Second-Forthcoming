@@ -470,7 +470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516549403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 307.85, y: 64.3, z: -65}
+  m_LocalPosition: {x: 307.85, y: 1123, z: -65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -561,13 +561,13 @@ MonoBehaviour:
       - m_Target: {fileID: 82758974}
         m_TargetAssemblyTypeName: MenuFunciones, Assembly-CSharp
         m_MethodName: cargarEscenaPrueba
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Nexo
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 916242183}
@@ -679,7 +679,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d41faec4c1b4ca44fa1ccfcb08a82620, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.94
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -898,7 +898,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f21994f26d5d2fa45b92cb6bc103720b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.85
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1628,14 +1628,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 82758974}
         m_TargetAssemblyTypeName: MenuFunciones, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: cargarEscenaPrueba
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: TechTest
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 916242183}

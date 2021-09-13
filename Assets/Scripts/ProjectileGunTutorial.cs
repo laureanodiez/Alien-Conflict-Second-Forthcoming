@@ -92,7 +92,7 @@ public class ProjectileGunTutorial : MonoBehaviour
             targetPoint = hitInfo.point;
             
             Vector3 directionWithoutSpread = targetPoint - transform.position;
-
+            directionWithoutSpread.y = attackPoint.position.y;
             //Calculate spread
             float x = Random.Range(-spread, spread);
             float y = Random.Range(-spread, spread);

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuFunciones : MonoBehaviour
 {
-    public void cargarEscenaPrueba(){
-        SceneManager.LoadScene("TechTest");
+    public void cargarEscenaPrueba(string nivel){
+        SceneManager.LoadScene(nivel);
     }
 }
