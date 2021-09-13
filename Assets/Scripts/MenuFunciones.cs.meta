@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2cfd8aaeb19853d4997a5f7e21f0168e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - camara: {instanceID: 0}
+  - MouseEnter: {instanceID: 0}
+  - MouseClickYes: {instanceID: 0}
+  - MouseClickNo: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
