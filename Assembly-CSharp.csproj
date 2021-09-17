@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CursorHitbox.cs" />
+     <Compile Include="Assets\Scripts\NoDestruirHover.cs" />
      <Compile Include="Assets\Scripts\Jugador.cs" />
      <Compile Include="Assets\Scripts\BulletCollide.cs" />
      <Compile Include="Assets\Scripts\ProjectileGunTutorial.cs" />
@@ -49,7 +50,7 @@
      <Compile Include="Assets\Scripts\CustomBullet.cs" />
      <Compile Include="Assets\Scripts\MenuFunciones.cs" />
      <Compile Include="Assets\Scripts\Moneda.cs" />
-     <Compile Include="Assets\Scripts\NoDestruirHover.cs" />
+     <Compile Include="Assets\Scripts\monedaNivel1.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
