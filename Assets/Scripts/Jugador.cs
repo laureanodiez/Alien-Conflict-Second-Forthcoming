@@ -8,6 +8,7 @@ public class Jugador : MonoBehaviour
     public float tiempo = 0.0f;
     public int limiteTiempo;
     public int salud = 100;
+    public float volumen;
     public AudioClip clip;
 
     public void incremento(int valor)
@@ -29,7 +30,7 @@ public class Jugador : MonoBehaviour
     {
         tiempo = tiempo + Time.deltaTime;
         if(salud < 1){
-        AudioSource.PlayClipAtPoint(clip, transform.position, 2);
+        AudioSource.PlayClipAtPoint(clip, transform.position, volumen);
         Destroy(gameObject);
         }
     }
