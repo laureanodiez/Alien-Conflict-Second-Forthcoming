@@ -9,6 +9,7 @@ public class SeguimientoVacio : MonoBehaviour
     public Vector3 offset;
     void Update()
     {
+        if(player != null)
         transform.position = player.position + offset;
 }
 }
