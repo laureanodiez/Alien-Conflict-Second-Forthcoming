@@ -10,8 +10,12 @@ public class Display : MonoBehaviour
     public float tiempo;
     public float limiteTiempo;
     public int salud;
+    public bool vivo = true;
 
     public void Update() {
+
+        if(Jugador1 != null)
+        {
         salud = Jugador1.GetComponent<Jugador>().salud;
         puntaje = Jugador1.GetComponent<Jugador>().puntajeJugador;
         tiempo = Jugador1.GetComponent<Jugador>().tiempo;
@@ -19,9 +23,14 @@ public class Display : MonoBehaviour
         // Están en udapte porque se tienen que actualizar constantemente
         // en el caso del tiempo, es irrelevante que se ejecute cada frame porque 
         // deltaTime va a normalizar el tiempo por otro lado 
+       }
+       else {
+         vivo = false;
+       }
     }
   
     private void OnGUI() {
+      if (vivo == true){
       GUI.contentColor = Color.green;
       GUI.Label(new Rect(100, 100, 90, 60), "HP: " + salud);
       if(tiempo < limiteTiempo)
@@ -34,7 +43,10 @@ public class Display : MonoBehaviour
         GUI.contentColor = Color.red;
         GUI.Label(new Rect(100, 50, 90, 100), "No hay más tiempo"); 
       }
-    // Está tomando el puntaje pero no imprime nada, por qué?
-    // Resuelto: Sin querer había tocado la escala del game render y no se veia
+     }
+     else {
+        GUI.contentColor = Color.red;
+        GUI.Label(new Rect(100, 50, 90, 100), "MORIDO"); 
     }
+  }
 }
