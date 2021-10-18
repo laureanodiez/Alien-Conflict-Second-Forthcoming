@@ -14,8 +14,8 @@ public class BulletCollide : MonoBehaviour
                 jugador.GetComponent<Jugador>().recibirDanio(valor);
                 AudioSource.PlayClipAtPoint(oof, transform.position, 0.1f);
                 Destroy(gameObject);
-         }
-        Destroy(gameObject);
+            }
+            Destroy(gameObject);
         }
     }
 }

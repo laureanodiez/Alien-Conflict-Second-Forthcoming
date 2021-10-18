@@ -9,7 +9,8 @@ public class MenuFunciones : MonoBehaviour
     public GameObject config;
     public GameObject menuPausa;
     public GameObject cargaPartida;
-    public bool juegoCorriendo;
+    public bool juegoCorriendo = true;
+    
 
     public void cargarEscenaPrueba(string nivel){
         SceneManager.LoadScene(nivel);
