@@ -9,6 +9,7 @@ public class CursorModos : MonoBehaviour
     
     private void Awake() {
         instance = this;
+        ActivarCursorCrosshair();
     }
     public void ActivarCursorSeleccion(){
         Cursor.SetCursor(handOpen, Vector2.zero, CursorMode.Auto);

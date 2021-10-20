@@ -95,10 +95,9 @@ public class ProjectileGunTutorial : MonoBehaviour
             directionWithoutSpread.y = 0.0f; // En teoria sale recto desde el attack point así
             //Calculate spread
             float x = Random.Range(-spread, spread);
-            float y = Random.Range(-spread, spread);
 
             //Calculate new direction with spread
-            Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0); //Just add spread to last direction
+            Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, 0, 0); //Just add spread to last direction
             // //check if ray hits something
             // Vector3 targetPoint;
             // if (Physics.Raycast(ray, out hit))
