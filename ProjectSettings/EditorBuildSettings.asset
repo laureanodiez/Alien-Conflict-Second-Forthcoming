@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Niveles en desuso/MenuViejo.unity
+    guid: b4fa402146e13ba4abadcbba0390a216
+  - enabled: 1
+    path: Assets/Scenes/Niveles en desuso/TechTest.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Nexo.unity
+    guid: 167c8f48d89fe1c4ea89e0cabc9d5aa7
+  - enabled: 1
+    path: Assets/Scenes/NivelPrototipo.unity
+    guid: 33be4007d11e8294f9139a59ad1f9b01
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: f4432f37b7b218740bd5dcae4624ef49
+  m_configObjects: {}

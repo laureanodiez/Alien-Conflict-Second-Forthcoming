@@ -10,6 +10,7 @@ public class Jugador : MonoBehaviour
     public int salud = 100;
     public float volumen;
     public AudioClip clip;
+    public bool ganar = false;
 
     public void incremento(int valor)
     {
@@ -20,6 +21,9 @@ public class Jugador : MonoBehaviour
         salud = salud - valor;
     }
 
+    public void ganador(){
+        ganar = true;
+    }
 
     public void curacion(int valor)
     {

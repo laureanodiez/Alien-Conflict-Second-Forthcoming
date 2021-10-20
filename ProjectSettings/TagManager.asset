@@ -7,6 +7,7 @@ TagManager:
   - Botiquin
   - Moneda
   - Bala
+  - mapa
   layers:
   - Default
   - TransparentFX
