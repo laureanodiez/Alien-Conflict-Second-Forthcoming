@@ -15,7 +15,9 @@ public class Display : MonoBehaviour
     public bool ganar;
 
     public void Update() {
-      if(Jugador1 != null) {
+
+        if(Jugador1 != null)
+        {
         salud = Jugador1.GetComponent<Jugador>().salud;
         puntaje = Jugador1.GetComponent<Jugador>().puntajeJugador;
         tiempo = Jugador1.GetComponent<Jugador>().tiempo;
