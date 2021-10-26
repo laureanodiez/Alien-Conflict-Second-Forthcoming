@@ -10,7 +10,23 @@ public class Jugador : MonoBehaviour
     public int salud = 100;
     public float volumen;
     public AudioClip clip;
+    public AudioClip oof;
     public bool ganar = false;
+
+    public void Update()
+    {
+        tiempo = tiempo + Time.deltaTime;
+        if(salud < 1){
+        AudioSource.PlayClipAtPoint(clip, transform.position, volumen);
+        Destroy(gameObject);
+        }
+    }
+
+    public void OnTriggerEnter(Collider other) {
+        if(other.gameObject.CompareTag("BalaEnemigo")){
+            recibirDanio(15);
+        }
+    }
 
     public void incremento(int valor)
     {
@@ -18,6 +34,7 @@ public class Jugador : MonoBehaviour
     }
 
     public void recibirDanio(int valor){
+        AudioSource.PlayClipAtPoint(oof, transform.position, 0.1f);
         salud = salud - valor;
     }
 
@@ -28,14 +45,5 @@ public class Jugador : MonoBehaviour
     public void curacion(int valor)
     {
         salud = salud + valor;
-    }
-
-    public void Update()
-    {
-        tiempo = tiempo + Time.deltaTime;
-        if(salud < 1){
-        AudioSource.PlayClipAtPoint(clip, transform.position, volumen);
-        Destroy(gameObject);
-        }
     }
 }

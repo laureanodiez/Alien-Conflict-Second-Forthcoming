@@ -8,6 +8,7 @@ TagManager:
   - Moneda
   - Bala
   - mapa
+  - BalaEnemigo
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - Terrain
   - Player
-  - 
+  - Balas
   - 
   - 
   - 

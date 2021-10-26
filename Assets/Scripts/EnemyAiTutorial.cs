@@ -20,8 +20,6 @@ public class EnemyAITutorial : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
-    public GameObject projectile;
-    public Transform attackPoint;
 
     //States
     public float sightRange, attackRange;
@@ -37,7 +35,7 @@ public class EnemyAITutorial : MonoBehaviour
     public void recibirDanio(int valor){
         salud = salud - valor;
 
-        if (salud <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+        if (salud <= 0) Invoke(nameof(DestroyEnemy), 0.2f);
     }
 
     private void DestroyEnemy()
@@ -102,14 +100,12 @@ public class EnemyAITutorial : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            ///Attack code here
-            Vector3 direction = listener.position - attackPoint.position; // + new Vector3(0,listener.position.y,0)
-            GameObject currentBullet = Instantiate(projectile, attackPoint.position, Quaternion.identity);
-            currentBullet.transform.forward = direction.normalized;
-
-            Rigidbody rb = currentBullet.GetComponent<Rigidbody>();
-            rb.AddForce(direction.normalized * 15f, ForceMode.Impulse);
-            ///End of attack code
+            if(gameObject.GetComponent<DispararEnemigo>() != null) {
+                gameObject.GetComponent<DispararEnemigo>().ataque();
+            }
+            if(gameObject.GetComponent<AtaqueMelee>() != null) {
+                gameObject.GetComponent<AtaqueMelee>().ataque();
+            }
 
             // gameObject.GetComponent<DispararEnemigo>().ataque();
 
