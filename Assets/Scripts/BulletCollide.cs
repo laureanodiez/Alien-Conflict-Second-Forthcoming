@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class BulletCollide : MonoBehaviour
 {
-    public GameObject jugador;
-    public AudioClip oof;
-    public int valor = 15;
     private void OnTriggerEnter(Collider other) {
-        if(!other.gameObject.CompareTag("Bala")){
-            if(other.gameObject.CompareTag("Player")){
-                jugador.GetComponent<Jugador>().recibirDanio(valor);
-                AudioSource.PlayClipAtPoint(oof, transform.position, 0.1f);
-                Destroy(gameObject);
-            }
+        if(other.gameObject.layer != 10){
             Destroy(gameObject);
         }
     }
