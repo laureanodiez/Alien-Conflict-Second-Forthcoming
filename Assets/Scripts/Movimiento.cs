@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    [SerializeField] private float speed = 5.0f;
+    [SerializeField] public float speed = 6.0f;
     private Vector3 movimiento = new Vector3(0,0,0);
     private Vector3 movimientoZ;
     private Vector3 movimientoX;
