@@ -13,30 +13,34 @@ public class Display : MonoBehaviour
     public int salud;
     public bool vivo = true;
     public bool ganar;
+    public menuDePausa mp;
 
     public void Update() {
 
-        if(Jugador1 != null)
-        {
-        salud = Jugador1.GetComponent<Jugador>().salud;
-        puntaje = Jugador1.GetComponent<Jugador>().puntajeJugador;
-        tiempo = Jugador1.GetComponent<Jugador>().tiempo;
-        limiteTiempo = Jugador1.GetComponent<Jugador>().limiteTiempo;
-        ganar = Jugador1.GetComponent<Jugador>().ganar;
-        // Están en udapte porque se tienen que actualizar constantemente
-        // en el caso del tiempo, es irrelevante que se ejecute cada frame porque 
-        // deltaTime va a normalizar el tiempo por otro lado 
-       }
-       else {
-         vivo = false;
-         if(Input.GetKeyDown(KeyCode.Return)){
-            SceneManager.LoadScene("Nexo");
-         }
-       }
+        if(mp.isGameRunning()) {
+            if(Jugador1 != null)
+                {
+                salud = Jugador1.GetComponent<Jugador>().salud;
+                puntaje = Jugador1.GetComponent<Jugador>().puntajeJugador;
+                tiempo = Jugador1.GetComponent<Jugador>().tiempo;
+                limiteTiempo = Jugador1.GetComponent<Jugador>().limiteTiempo;
+                ganar = Jugador1.GetComponent<Jugador>().ganar;
+                // Están en udapte porque se tienen que actualizar constantemente
+                // en el caso del tiempo, es irrelevante que se ejecute cada frame porque 
+                // deltaTime va a normalizar el tiempo por otro lado 
+            }
+            else {
+                vivo = false;
+                if(Input.GetKeyDown(KeyCode.Return)){
+                    SceneManager.LoadScene("Nexo");
+                }
+            }
+        }
     }
 
     private void OnGUI() {
-        if(ganar == false){
+        if(mp.isGameRunning()) {
+            if(ganar == false){
             if (vivo == true){
                 GUI.contentColor = Color.green;
                 GUI.Label(new Rect(100, 100, 90, 60), "HP: " + salud);
@@ -57,12 +61,13 @@ public class Display : MonoBehaviour
                 GUI.Label(new Rect(100, 10, 90, 60), "Presione enter para volver al NEXO"); 
                 
             }
-        }
-        else{
-            GUI.contentColor = Color.green;
-            GUI.Label(new Rect(100, 100, 90, 60), "VICTORIA");
-            GUI.contentColor = Color.yellow;
-            GUI.Label(new Rect(100, 10, 90, 60), "Presione enter para volver al NEXO");  
+            }
+            else{
+                GUI.contentColor = Color.green;
+                GUI.Label(new Rect(100, 100, 90, 60), "VICTORIA");
+                GUI.contentColor = Color.yellow;
+                GUI.Label(new Rect(100, 10, 90, 60), "Presione enter para volver al NEXO");  
+            }
         }
     }
 }

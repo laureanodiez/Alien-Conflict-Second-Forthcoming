@@ -44,6 +44,8 @@ public class ProjectileGunTutorial : MonoBehaviour
     //bug fixing :D
     public bool allowInvoke = true;
 
+    public menuDePausa mp;
+
     private void Awake()
     {
         //make sure magazine is full
@@ -75,8 +77,9 @@ public class ProjectileGunTutorial : MonoBehaviour
         {
             //Set bullets shot to 0
             bulletsShot = 0;
-
-            Shoot();
+            if(mp.isGameRunning()) {
+                Shoot();
+            }
         }
     }
 

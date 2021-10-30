@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\NoDestruirHover.cs" />
      <Compile Include="Assets\Scripts\zonaVictoria.cs" />
      <Compile Include="Assets\Scripts\Jugador.cs" />
+     <Compile Include="Assets\Scripts\elegirNivel.cs" />
      <Compile Include="Assets\Scripts\EnemyAITutorial.cs" />
      <Compile Include="Assets\Scripts\CursorMenu.cs" />
      <Compile Include="Assets\Scripts\BulletCollide.cs" />
@@ -81,7 +82,8 @@
      <Compile Include="Assets\Scripts\MenuFunciones.cs" />
      <Compile Include="Assets\Scripts\Moneda.cs" />
      <Compile Include="Assets\Scripts\TheWorld.cs" />
-     <Compile Include="Assets\Scripts\elegirNivel.cs" />
+     <Compile Include="Assets\Scripts\menuDePausa.cs" />
+     <Compile Include="Assets\Scripts\pausarJuego.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
