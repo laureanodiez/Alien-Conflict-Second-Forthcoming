@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Jugador : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Jugador : MonoBehaviour
     public AudioClip clip;
     public AudioClip oof;
     public bool ganar = false;
-
+    
     public void Update()
     {
         tiempo = tiempo + Time.deltaTime;

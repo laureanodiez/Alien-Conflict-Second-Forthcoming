@@ -56,9 +56,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CursorHitbox.cs" />
+     <Compile Include="Assets\Scripts\pausarJuego.cs" />
      <Compile Include="Assets\Scripts\DisplayNexo.cs" />
      <Compile Include="Assets\Scripts\Habilidad.cs" />
      <Compile Include="Assets\Scripts\DispararEnemigo.cs" />
+     <Compile Include="Assets\Scripts\menuDePausa.cs" />
      <Compile Include="Assets\Scripts\MonedaMenu.cs" />
      <Compile Include="Assets\Scripts\NoDestruirHover.cs" />
      <Compile Include="Assets\Scripts\zonaVictoria.cs" />
@@ -67,6 +69,7 @@
      <Compile Include="Assets\Scripts\EnemyAITutorial.cs" />
      <Compile Include="Assets\Scripts\CursorMenu.cs" />
      <Compile Include="Assets\Scripts\BulletCollide.cs" />
+     <Compile Include="Assets\Scripts\MenuDerrota.cs" />
      <Compile Include="Assets\Scripts\ProjectileGunTutorial.cs" />
      <Compile Include="Assets\Scripts\Display.cs" />
      <Compile Include="Assets\Scripts\AtaqueMelee.cs" />
@@ -82,8 +85,6 @@
      <Compile Include="Assets\Scripts\MenuFunciones.cs" />
      <Compile Include="Assets\Scripts\Moneda.cs" />
      <Compile Include="Assets\Scripts\TheWorld.cs" />
-     <Compile Include="Assets\Scripts\menuDePausa.cs" />
-     <Compile Include="Assets\Scripts\pausarJuego.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

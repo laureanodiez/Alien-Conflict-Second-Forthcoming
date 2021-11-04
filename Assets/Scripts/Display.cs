@@ -14,6 +14,9 @@ public class Display : MonoBehaviour
     public bool vivo = true;
     public bool ganar;
     public menuDePausa mp;
+    public GameObject menuDerrota;
+    public GameObject menuVictoria;
+    public float tiempo2 = 0f;
 
     public void Update() {
 
@@ -36,38 +39,60 @@ public class Display : MonoBehaviour
                 }
             }
         }
+        if(ganar == false){
+                if (vivo == true){
+                    //acá va la barra de salud
+                    //también el puntaje
+                }
+                else {
+                    if(tiempo2 >= 3f) {
+                        menuDerrota.SetActive(true);
+                    }
+                    else {
+                        tiempo2 += Time.deltaTime;
+                    }
+                }
+            }
+            else{
+                if(tiempo2 >= 3f) {
+                    menuVictoria.SetActive(true);
+                }
+                else {
+                    tiempo2 += Time.deltaTime;
+                } 
+            }
     }
 
     private void OnGUI() {
         if(mp.isGameRunning()) {
             if(ganar == false){
-            if (vivo == true){
-                GUI.contentColor = Color.green;
-                GUI.Label(new Rect(100, 100, 90, 60), "HP: " + salud);
-            if(tiempo < limiteTiempo)
-            {
-                GUI.contentColor = Color.yellow;
-                GUI.Label(new Rect(100, 10, 90, 60), "Puntaje: " + puntaje);  
-                GUI.Label(new Rect(100, 50, 90, 100), "Tiempo: " + tiempo); 
-            }
-            else {
-                GUI.contentColor = Color.red;
-                GUI.Label(new Rect(100, 50, 90, 100), "No hay más tiempo"); 
-            }
-            }
-            else {
-                GUI.contentColor = Color.red;
-                GUI.Label(new Rect(100, 100, 90, 100), "MORIDO"); 
-                GUI.Label(new Rect(100, 10, 90, 60), "Presione enter para volver al NEXO"); 
-                
-            }
-            }
-            else{
-                GUI.contentColor = Color.green;
-                GUI.Label(new Rect(100, 100, 90, 60), "VICTORIA");
-                GUI.contentColor = Color.yellow;
-                GUI.Label(new Rect(100, 10, 90, 60), "Presione enter para volver al NEXO");  
+                if (vivo == true){
+                    GUI.contentColor = Color.green;
+                    GUI.Label(new Rect(100, 100, 90, 60), "HP: " + salud);
+                    if(tiempo < limiteTiempo)
+                    {
+                        GUI.contentColor = Color.yellow;
+                        GUI.Label(new Rect(100, 10, 90, 60), "Puntaje: " + puntaje);  
+                        GUI.Label(new Rect(100, 50, 90, 100), "Tiempo: " + tiempo); 
+                    }
+                }
             }
         }
+    }
+
+    public void reintentar(string nivel) {
+        SceneManager.LoadScene(nivel);
+    }
+
+    public void volverAlNexo() {
+        SceneManager.LoadScene("Nexo");
+    }
+
+    public void volverAlMenu() {
+        SceneManager.LoadScene("MenuPrincipal");
+    }
+
+    public void salir() {
+        Application.Quit();
     }
 }
