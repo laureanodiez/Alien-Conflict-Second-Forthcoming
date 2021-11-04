@@ -10,7 +10,7 @@ public class Display : MonoBehaviour
     public int puntaje;
     public float tiempo;
     public float limiteTiempo;
-    public int salud;
+    public float salud;
     public bool vivo = true;
     public bool ganar;
     public menuDePausa mp;

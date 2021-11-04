@@ -7,7 +7,8 @@ public class Jugador : MonoBehaviour
     public int puntajeJugador = 0;
     public float tiempo = 0.0f;
     public int limiteTiempo;
-    public int salud = 100;
+    public float salud = 100f;
+    public float saludMax = 100f;
     public float volumen;
     public AudioClip clip;
     public AudioClip oof;
@@ -19,6 +20,7 @@ public class Jugador : MonoBehaviour
         if(salud < 1){
         AudioSource.PlayClipAtPoint(clip, transform.position, volumen);
         Destroy(gameObject);
+        salud = 0;
         }
     }
 
