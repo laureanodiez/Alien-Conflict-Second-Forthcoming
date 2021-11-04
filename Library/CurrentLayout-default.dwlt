@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 13720
+  controlID: 3586
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 635
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 13694
+  controlID: 3587
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 364
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 13695
+  controlID: 3588
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -397,9 +397,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ce480000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 905effffde62ffff3e66ffffb6e3ffffbee3ffffd2e3ffffdce3ffff5ee5ffff6cf8ffff0c490000204900004a4900009a490000184a0000864a0000d84c0000
+      m_SelectedIDs: c64f0000
+      m_LastClickedID: 20422
+      m_ExpandedIDs: 30eeffff64eeffff9af0ffff60fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 56.15074, y: -105.25772, z: 185.11613}
+    m_Target: {x: 368.38644, y: 139.46106, z: 292.33783}
     speed: 2
-    m_Value: {x: 56.15074, y: -105.25772, z: 185.11613}
+    m_Value: {x: 368.38644, y: 139.46106, z: 292.33783}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -508,13 +508,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.31832072, y: -0.18134604, z: 0.06217852, w: -0.92839855}
+    m_Target: {x: -0.06325052, y: 0.023048399, z: -0.0014612278, w: -0.9977331}
     speed: 2
-    m_Value: {x: -0.3183207, y: -0.18134604, z: 0.062178515, w: -0.92839855}
+    m_Value: {x: -0.06325052, y: 0.023048399, z: -0.0014612278, w: -0.9977331}
   m_Size:
-    m_Target: 109.890594
+    m_Target: 406.59973
     speed: 2
-    m_Value: 109.890594
+    m_Value: 406.59973
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -602,21 +602,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Sonido-Musica
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Sonido-Musica
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\Tom\xE1s\\Desktop\\Videojuego\\Alien-Conflict-Second-Forthcoming"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 30}
-    m_SelectedIDs: 663c0000
-    m_LastClickedID: 15462
-    m_ExpandedIDs: 00000000543c0000563c0000583c000000ca9a3b
+    m_SelectedIDs: c83a0000
+    m_LastClickedID: 15048
+    m_ExpandedIDs: 00000000b23a0000b43a0000b63a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -644,7 +644,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000543c0000563c0000583c000000ca9a3b
+    m_ExpandedIDs: 00000000b23a0000b43a0000b63a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -688,7 +688,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

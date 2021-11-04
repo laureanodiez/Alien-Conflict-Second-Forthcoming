@@ -17,6 +17,9 @@ public class Display : MonoBehaviour
     public GameObject menuDerrota;
     public GameObject menuVictoria;
     public float tiempo2 = 0f;
+    public AudioSource audioNormal;
+    public AudioSource audioPocaVida;
+    public AudioSource audioMenuPausa;
 
     public void Update() {
 
@@ -38,6 +41,28 @@ public class Display : MonoBehaviour
                     SceneManager.LoadScene("Nexo");
                 }
             }
+            if(salud < 20) {
+                        if(salud > 0) {
+                            audioNormal.volume = 0.0f;
+                            audioPocaVida.volume = 0.2f;
+                            audioMenuPausa.volume = 0.0f;
+                        }
+                        else {
+                            audioNormal.volume = 0.0f;
+                            audioPocaVida.volume = 0.0f;
+                            audioMenuPausa.volume = 0.0f;
+                        }
+                    }
+                    else {
+                        audioNormal.volume = 0.2f;
+                        audioPocaVida.volume = 0.0f;
+                        audioMenuPausa.volume = 0.0f;
+                    }
+        }
+        else {
+            audioNormal.volume = 0.0f;
+            audioPocaVida.volume = 0.0f;
+            audioMenuPausa.volume = 0.1f;
         }
         if(ganar == false) {
                 if (vivo == true){
