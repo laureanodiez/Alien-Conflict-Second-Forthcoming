@@ -39,9 +39,8 @@ public class Display : MonoBehaviour
                 }
             }
         }
-        if(ganar == false){
+        if(ganar == false) {
                 if (vivo == true){
-                    //acá va la barra de salud
                     //también el puntaje
                 }
                 else {
@@ -53,27 +52,25 @@ public class Display : MonoBehaviour
                     }
                 }
             }
-            else{
-                if(tiempo2 >= 3f) {
-                    menuVictoria.SetActive(true);
-                }
-                else {
-                    tiempo2 += Time.deltaTime;
-                } 
+        else {
+            puntaje = puntaje + (2000*((int)salud));
+            if(tiempo2 >= 3f) {
+                menuVictoria.SetActive(true);
             }
+            else {
+                tiempo2 += Time.deltaTime;
+            } 
+        }
     }
 
     private void OnGUI() {
         if(mp.isGameRunning()) {
             if(ganar == false){
                 if (vivo == true){
-                    GUI.contentColor = Color.green;
-                    GUI.Label(new Rect(100, 100, 90, 60), "HP: " + salud);
                     if(tiempo < limiteTiempo)
                     {
                         GUI.contentColor = Color.yellow;
                         GUI.Label(new Rect(100, 10, 90, 60), "Puntaje: " + puntaje);  
-                        GUI.Label(new Rect(100, 50, 90, 100), "Tiempo: " + tiempo); 
                     }
                 }
             }

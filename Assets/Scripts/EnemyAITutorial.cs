@@ -25,6 +25,8 @@ public class EnemyAITutorial : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    public int puntuacion;
+
     private void Awake()
     {
         player = GameObject.Find("Player");
@@ -34,13 +36,14 @@ public class EnemyAITutorial : MonoBehaviour
 
     public void recibirDanio(int valor){
         salud = salud - valor;
-
-        if (salud <= 0) Invoke(nameof(DestroyEnemy), 0.2f);
+        if (salud <= 0) { 
+            Invoke(nameof(DestroyEnemy), 0.2f);
+        }
     }
 
     private void DestroyEnemy()
     {
-        // player.GetComponent<Jugador>.incremento(1);
+        player.GetComponent<Jugador>().incremento(puntuacion);
         Destroy(gameObject);
     }
 
