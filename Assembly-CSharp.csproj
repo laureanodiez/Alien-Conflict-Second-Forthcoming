@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CursorHitbox.cs" />
      <Compile Include="Assets\Scripts\pausarJuego.cs" />
+     <Compile Include="Assets\Scripts\BarraDeVida.cs" />
      <Compile Include="Assets\Scripts\DisplayNexo.cs" />
      <Compile Include="Assets\Scripts\Habilidad.cs" />
      <Compile Include="Assets\Scripts\DispararEnemigo.cs" />
@@ -85,10 +86,6 @@
      <Compile Include="Assets\Scripts\MenuFunciones.cs" />
      <Compile Include="Assets\Scripts\Moneda.cs" />
      <Compile Include="Assets\Scripts\TheWorld.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\BarraDeVida.cs" />
-=======
->>>>>>> origin/main
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/NivelPrototipo.unity
-=======
-- path: Assets/Scenes/Nexo.unity
->>>>>>> origin/main
+- path: Assets/Scenes/MenuPrincipal.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

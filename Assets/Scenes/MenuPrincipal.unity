@@ -2133,11 +2133,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Movimiento = W A S D\nDisparo = Click Izquierdo\nRecarga = R\n\n\nUna
-    vez empiece la partida, estar\xE1 en el NEXO. Para comenzar la misi\xF3n, dirigase
-    a la \"Moneda del teletransporte\".\nEn la misi\xF3n, deber\xE1 llegar a la otra
-    punta del mapa combatiendo contra los alien\xEDgenas que se interpondran en su
-    camino"
+  m_text: "Movimiento = W A S D\nDisparo = Click Izquierdo\nRecarga = R\nHabilidad
+    = F\n\nUna vez empiece la partida, estar\xE1 en el NEXO. Para comenzar la misi\xF3n,
+    dirigase a la televisi\xF3n.\nEn la misi\xF3n, deber\xE1 llegar a la otra punta
+    del mapa combatiendo contra los alien\xEDgenas que se interpondran en su camino."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
