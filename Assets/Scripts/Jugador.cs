@@ -53,7 +53,7 @@ public class Jugador : MonoBehaviour
 
     public void ganador(){
         ganar = true;
-        puntajeJugador = puntajeJugador + (10*((int)salud));
+        puntajeJugador = puntajeJugador + (100*((int)salud));
     }
 
     public void curacion(int valor)

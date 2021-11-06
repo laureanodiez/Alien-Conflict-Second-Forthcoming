@@ -84,7 +84,7 @@ public class Display : MonoBehaviour
                 }
             }
         else {
-            puntaje = puntaje + (10*((int)salud));
+            puntaje = puntaje + (100*((int)salud));
             if(tiempo2 >= 3f) {
                 menuVictoria.SetActive(true);
                 puntosFinalVictoria.text = "Puntaje Final: " + puntaje.ToString();
