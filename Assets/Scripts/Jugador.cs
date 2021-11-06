@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Jugador : MonoBehaviour
 {
     public int puntajeJugador = 0;
+    public Text contador;
+    public int cont=0;
     public float tiempo = 0.0f;
     public int limiteTiempo;
     public float salud = 100f;
@@ -15,6 +17,10 @@ public class Jugador : MonoBehaviour
     public AudioClip oof;
     public bool ganar = false;
     
+    void Start () {
+        contador.text = " " + puntajeJugador;
+	}
+
     public void Update()
     {
         tiempo = tiempo + Time.deltaTime;
@@ -34,6 +40,10 @@ public class Jugador : MonoBehaviour
     public void incremento(int valor)
     {
         puntajeJugador = puntajeJugador + valor;
+        while(cont <= puntajeJugador) {
+            contador.text = " " + cont.ToString();
+            cont++;
+        }
     }
 
     public void recibirDanio(int valor){
@@ -43,6 +53,7 @@ public class Jugador : MonoBehaviour
 
     public void ganador(){
         ganar = true;
+        puntajeJugador = puntajeJugador + (10*((int)salud));
     }
 
     public void curacion(int valor)

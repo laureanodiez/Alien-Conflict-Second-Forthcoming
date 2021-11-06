@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Display : MonoBehaviour
 {
 
     public GameObject Jugador1; // Asignar el gameobject del personaje en inspector. Aparentemente la única manera de hacerlo sin que sea demasiado complicado
     public int puntaje;
+    public Text contador;
+    public TextMeshProUGUI puntosFinal;
+    public TextMeshProUGUI puntosFinalVictoria;
     public float tiempo;
     public float limiteTiempo;
     public float salud;
@@ -41,7 +46,7 @@ public class Display : MonoBehaviour
                     SceneManager.LoadScene("Nexo");
                 }
             }
-            if(salud < 20) {
+            if(salud <= 25) {
                         if(salud > 0) {
                             audioNormal.volume = 0.0f;
                             audioPocaVida.volume = 0.2f;
@@ -71,6 +76,7 @@ public class Display : MonoBehaviour
                 else {
                     if(tiempo2 >= 3f) {
                         menuDerrota.SetActive(true);
+                        puntosFinal.text = "Puntaje Final: " + puntaje.ToString();
                     }
                     else {
                         tiempo2 += Time.deltaTime;
@@ -78,27 +84,17 @@ public class Display : MonoBehaviour
                 }
             }
         else {
-            puntaje = puntaje + (2000*((int)salud));
+            puntaje = puntaje + (10*((int)salud));
             if(tiempo2 >= 3f) {
                 menuVictoria.SetActive(true);
+                puntosFinalVictoria.text = "Puntaje Final: " + puntaje.ToString();
             }
             else {
                 tiempo2 += Time.deltaTime;
-            } 
-        }
-    }
-
-    private void OnGUI() {
-        if(mp.isGameRunning()) {
-            if(ganar == false){
-                if (vivo == true){
-                    if(tiempo < limiteTiempo)
-                    {
-                        GUI.contentColor = Color.yellow;
-                        GUI.Label(new Rect(100, 10, 90, 60), "Puntaje: " + puntaje);  
-                    }
-                }
             }
+            audioNormal.volume = 0.0f;
+            audioPocaVida.volume = 0.0f;
+            audioMenuPausa.volume = 0.0f; 
         }
     }
 
