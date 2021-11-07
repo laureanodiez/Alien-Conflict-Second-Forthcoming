@@ -16,6 +16,7 @@ public class Jugador : MonoBehaviour
     public AudioClip clip;
     public AudioClip oof;
     public bool ganar = false;
+    private float s;
     
     void Start () {
         contador.text = " " + puntajeJugador;
@@ -58,6 +59,12 @@ public class Jugador : MonoBehaviour
 
     public void curacion(int valor)
     {
-        salud = salud + valor;
+        s = salud + valor;
+        if(s > 100) {
+            salud = 100;
+        }
+        else {
+            salud = salud + valor;
+        }
     }
 }

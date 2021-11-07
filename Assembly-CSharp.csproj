@@ -86,6 +86,8 @@
      <Compile Include="Assets\Scripts\MenuFunciones.cs" />
      <Compile Include="Assets\Scripts\Moneda.cs" />
      <Compile Include="Assets\Scripts\TheWorld.cs" />
+     <Compile Include="Assets\Scripts\tiendaDeArmas.cs" />
+     <Compile Include="Assets\Scripts\mejoraDeHabilidades.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
