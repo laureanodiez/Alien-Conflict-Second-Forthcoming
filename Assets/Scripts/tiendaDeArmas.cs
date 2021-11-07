@@ -21,4 +21,8 @@ public class tiendaDeArmas : MonoBehaviour
             }
         }
     }
+
+    public void volverAlNexo() {
+        tienda.SetActive(false);
+    }
 }
