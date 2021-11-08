@@ -3,6 +3,8 @@ using UnityEngine.AI;
 
 public class EnemyAITutorial : MonoBehaviour
 {
+    public Animator animator;
+
     public NavMeshAgent agent;
 
     public GameObject player;
@@ -26,6 +28,11 @@ public class EnemyAITutorial : MonoBehaviour
     public bool playerInSightRange, playerInAttackRange;
 
     public int puntuacion;
+
+    public void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void Awake()
     {
@@ -76,6 +83,9 @@ public class EnemyAITutorial : MonoBehaviour
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
+
+        //Walking animation starts
+        animator.SetBool("isWalking", true);
     }
     private void SearchWalkPoint()
     {
@@ -92,6 +102,8 @@ public class EnemyAITutorial : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.transform.position);
+        //Walking animation continues
+        animator.SetBool("isWalking", true);
     }
 
     private void AttackPlayer()
@@ -100,6 +112,9 @@ public class EnemyAITutorial : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(listener);
+
+        //Walking animation stops
+        animator.SetBool("isWalking", false);
 
         if (!alreadyAttacked)
         {
