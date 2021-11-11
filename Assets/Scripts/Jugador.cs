@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Jugador : MonoBehaviour
 {
+    public Guardado choto;
     public int puntajeJugador = 0;
     public Text contador;
     public int cont=0;
@@ -17,13 +18,24 @@ public class Jugador : MonoBehaviour
     public AudioClip oof;
     public bool ganar = false;
     private float s;
-    
-    void Start () {
+   
+    private void Awake() {
+        choto = FindObjectOfType<Guardado>();
+        choto.cargarashe();
+    }
+
+    private void Start() {
         contador.text = " " + puntajeJugador;
+        salud = saludMax;
+        choto = FindObjectOfType<Guardado>();
+        choto.cargarashe();
+        //puntajeJugador = choto.puntaje;
+        //saludMax = choto.saludM;
 	}
 
     public void Update()
     {
+        //choto = FindObjectOfType<Guardado>();
         tiempo = tiempo + Time.deltaTime;
         if(salud < 1){
         AudioSource.PlayClipAtPoint(clip, transform.position, volumen);

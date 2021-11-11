@@ -4,23 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class menuDePausa : MonoBehaviour
 {   
-
+    public Guardado choto;
+    public GameObject jugador;
     public GameObject menuPausa;
     public GameObject menuAyuda;
     public GameObject menu;
     public bool juegoCorriendo = true;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Awake() {
+        choto = FindObjectOfType<Guardado>();
+        jugador = FindObjectOfType<GameObject>();
     }
-
     public void reanudar() {
         menuPausa.SetActive(false);
         Time.timeScale = 1.0f;
@@ -39,6 +33,8 @@ public class menuDePausa : MonoBehaviour
 
     public void volver(string nivel) {
         Time.timeScale = 1.0f;
+        
+        choto.guardadoashe();
         cambiarEstado();
         SceneManager.LoadScene(nivel);
     }

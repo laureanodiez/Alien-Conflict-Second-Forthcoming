@@ -5,15 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class elegirNivel : MonoBehaviour
 {
+    public Guardado choto;
     public GameObject player;
     public GameObject pantalla;
     public GameObject menu;
     public int m=0;
     // public GameObject nexo;
     // Start is called before the first frame update
+    private void Awake() {
+        choto = FindObjectOfType<Guardado>();
+    }
     void Start()
     {
-        
+        player = GameObject.Find ("Player");
     }
 
 
@@ -33,6 +37,8 @@ public class elegirNivel : MonoBehaviour
     }
 
     public void cargarNivel(string nivel) {
+        choto = FindObjectOfType<Guardado>();
+        choto.guardadoashe();
         SceneManager.LoadScene(nivel);
     }
 
