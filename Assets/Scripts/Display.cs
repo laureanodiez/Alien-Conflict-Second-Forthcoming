@@ -25,6 +25,7 @@ public class Display : MonoBehaviour
     public AudioSource audioNormal;
     public AudioSource audioPocaVida;
     public AudioSource audioMenuPausa;
+    public AudioClip audioVictoria;
 
     public void Update() {
 
@@ -91,9 +92,10 @@ public class Display : MonoBehaviour
             else {
                 tiempo2 += Time.deltaTime;
             }
+            AudioSource.PlayClipAtPoint(audioVictoria, transform.position, 0.3f);
             audioNormal.volume = 0.0f;
             audioPocaVida.volume = 0.0f;
-            audioMenuPausa.volume = 0.0f; 
+            audioMenuPausa.volume = 0.0f;
         }
     }
 
