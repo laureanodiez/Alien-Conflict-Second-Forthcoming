@@ -6,6 +6,7 @@ public class Guardado : MonoBehaviour
 {
     public int puntaje = 0;
     public float saludM;
+    public Habilidad habilidad;
     public GameObject jugador;
     public static Guardado Instance; //la idea de esto es hacer que haya
     // una UNICA instancia de este objeto, y no destruirla nunca cambiando de escena
@@ -30,6 +31,7 @@ public class Guardado : MonoBehaviour
     public void guardadoashe() {
         puntaje = jugador.GetComponent<Jugador>().puntajeJugador;
         saludM = jugador.GetComponent<Jugador>().saludMax;
+        habilidad = jugador.GetComponent<TieneHablidad>().habilidad;
     }
     
     public void cargarashe() {
@@ -37,11 +39,13 @@ public class Guardado : MonoBehaviour
         if(jugador != null){
             jugador.GetComponent<Jugador>().puntajeJugador = puntaje;
             jugador.GetComponent<Jugador>().saludMax = saludM;
+            jugador.GetComponent<TieneHablidad>().habilidad = habilidad;
         }
         else{
             jugador = GameObject.Find("Player");
             jugador.GetComponent<Jugador>().puntajeJugador = puntaje;
             jugador.GetComponent<Jugador>().saludMax = saludM;
+            jugador.GetComponent<TieneHablidad>().habilidad = habilidad;
         }
 
 

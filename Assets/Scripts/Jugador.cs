@@ -18,7 +18,19 @@ public class Jugador : MonoBehaviour
     public AudioClip oof;
     public bool ganar = false;
     private float s;
-   
+    public int[] Armas;
+    public int ArmaActual;
+
+    //enum Arma {
+    //    Escopeta,
+    //    MP5,
+    //    SCAR,
+    //    M4A4,
+    //    AWP,
+    //    NEGEV
+    //}
+    
+    
     private void Awake() {
         choto = FindObjectOfType<Guardado>();
         choto.cargarashe();
@@ -29,13 +41,10 @@ public class Jugador : MonoBehaviour
         salud = saludMax;
         choto = FindObjectOfType<Guardado>();
         choto.cargarashe();
-        //puntajeJugador = choto.puntaje;
-        //saludMax = choto.saludM;
 	}
 
     public void Update()
     {
-        //choto = FindObjectOfType<Guardado>();
         tiempo = tiempo + Time.deltaTime;
         if(salud < 1){
         AudioSource.PlayClipAtPoint(clip, transform.position, volumen);

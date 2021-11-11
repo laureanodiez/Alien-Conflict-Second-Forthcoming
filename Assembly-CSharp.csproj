@@ -60,11 +60,14 @@
      <Compile Include="Assets\Scripts\BarraDeVida.cs" />
      <Compile Include="Assets\Scripts\DisplayNexo.cs" />
      <Compile Include="Assets\Scripts\Habilidad.cs" />
+     <Compile Include="Assets\Scripts\SriptableObjectsChanger.cs" />
      <Compile Include="Assets\Scripts\DispararEnemigo.cs" />
      <Compile Include="Assets\Scripts\menuDePausa.cs" />
+     <Compile Include="Assets\Scripts\TieneArma.cs" />
      <Compile Include="Assets\Scripts\MonedaMenu.cs" />
      <Compile Include="Assets\Scripts\NoDestruirHover.cs" />
      <Compile Include="Assets\Scripts\zonaVictoria.cs" />
+     <Compile Include="Assets\Scripts\MuestraArma.cs" />
      <Compile Include="Assets\Scripts\Jugador.cs" />
      <Compile Include="Assets\Scripts\elegirNivel.cs" />
      <Compile Include="Assets\Scripts\EnemyAITutorial.cs" />
@@ -75,6 +78,7 @@
      <Compile Include="Assets\Scripts\Display.cs" />
      <Compile Include="Assets\Scripts\MenuPrincipal.cs" />
      <Compile Include="Assets\Scripts\AtaqueMelee.cs" />
+     <Compile Include="Assets\Scripts\Guardado.cs" />
      <Compile Include="Assets\Scripts\SeguimientoVacio.cs" />
      <Compile Include="Assets\Scripts\monedaNivel1.cs" />
      <Compile Include="Assets\Scripts\CamaraCompletaCasero.cs" />
@@ -85,10 +89,11 @@
      <Compile Include="Assets\Scripts\NoDestruir.cs" />
      <Compile Include="Assets\Scripts\CursorModos.cs" />
      <Compile Include="Assets\Scripts\CustomBullet.cs" />
+     <Compile Include="Assets\Scripts\DisplayArma.cs" />
+     <Compile Include="Assets\Scripts\Arma.cs" />
      <Compile Include="Assets\Scripts\MenuFunciones.cs" />
      <Compile Include="Assets\Scripts\Moneda.cs" />
      <Compile Include="Assets\Scripts\TheWorld.cs" />
-     <Compile Include="Assets\Scripts\Guardado.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

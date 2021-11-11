@@ -1904,6 +1904,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5007236683770629144, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
+      propertyPath: Cam
+      value: 
+      objectReference: {fileID: 347729150}
     - target: {fileID: 5674715346674891528, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.79
@@ -2000,17 +2004,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   habilidad: {fileID: 11400000, guid: b41ab8d7576c73f429d71bafd40e9971, type: 2}
---- !u!114 &397258084 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5674715346674891533, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
-  m_PrefabInstance: {fileID: 397258079}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397258080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad784da506b7415459bd73af8c410d1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &494230823
 GameObject:
   m_ObjectHideFlags: 0
@@ -8917,10 +8910,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1466748311712126474, guid: 5ec647dce106b374e86a8cd9b9a7d0db, type: 3}
-      propertyPath: jugador
-      value: 
-      objectReference: {fileID: 397258084}
     - target: {fileID: 1466748311712126475, guid: 5ec647dce106b374e86a8cd9b9a7d0db, type: 3}
       propertyPath: m_Name
       value: ObjGuardar

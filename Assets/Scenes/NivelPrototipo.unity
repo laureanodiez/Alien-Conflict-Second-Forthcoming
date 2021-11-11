@@ -3491,7 +3491,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643270855}
+  m_GameObject: {fileID: 809826162512583667}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
@@ -7792,11 +7792,6 @@ CapsuleCollider:
   m_Height: 53.556038
   m_Direction: 1
   m_Center: {x: 0, y: 13.778019, z: 0}
---- !u!1 &1643270855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 809826162902512454, guid: 66f902e6a06752e40a91d410b163cd1d, type: 3}
-  m_PrefabInstance: {fileID: 1811835061}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1644149873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11159,6 +11154,11 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &809826162512583667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 809826162902512454, guid: 66f902e6a06752e40a91d410b163cd1d, type: 3}
+  m_PrefabInstance: {fileID: 1811835061}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832149485741884267
 GameObject:
   m_ObjectHideFlags: 0
@@ -12064,6 +12064,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 373383244535058020, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.527
+      objectReference: {fileID: 0}
+    - target: {fileID: 373383244535058020, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007236683770629144, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
+      propertyPath: mp
+      value: 
+      objectReference: {fileID: 611217125}
+    - target: {fileID: 5007236683770629144, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
+      propertyPath: Cam
+      value: 
+      objectReference: {fileID: 1310200339}
+    - target: {fileID: 5007236683770629144, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
+      propertyPath: ammunitionDisplay
+      value: 
+      objectReference: {fileID: 1759881223}
     - target: {fileID: 5674715346674891528, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.01
@@ -12702,6 +12722,10 @@ PrefabInstance:
     - target: {fileID: 3668347345325574905, guid: c2c0fd839b7b0fe43b7f6a796ad5f6fb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -470
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962095931782837564, guid: c2c0fd839b7b0fe43b7f6a796ad5f6fb, type: 3}
+      propertyPath: m_Name
+      value: Muncion
       objectReference: {fileID: 0}
     - target: {fileID: 3962095931782837566, guid: c2c0fd839b7b0fe43b7f6a796ad5f6fb, type: 3}
       propertyPath: m_fontStyle

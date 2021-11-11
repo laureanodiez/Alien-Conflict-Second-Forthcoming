@@ -45,4 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntaje: 0
   saludM: 100
-  jugador: {fileID: 5674715346674891533, guid: da6fb3f5307a71740b564dd869f20235, type: 3}
+  habilidad: {fileID: 11400000, guid: b41ab8d7576c73f429d71bafd40e9971, type: 2}
+  jugador: {fileID: 0}
