@@ -14,6 +14,7 @@ public class EnemyAITutorial : MonoBehaviour
 
     public float salud;
 
+    int contador;
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -43,7 +44,8 @@ public class EnemyAITutorial : MonoBehaviour
 
     public void recibirDanio(int valor){
         salud = salud - valor;
-        if (salud <= 0) { 
+        if (salud <= 0 && contador == 0) { 
+            contador++;
             Invoke(nameof(DestroyEnemy), 0.2f);
         }
     }

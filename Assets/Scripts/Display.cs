@@ -7,7 +7,7 @@ using TMPro;
 
 public class Display : MonoBehaviour
 {
-
+    public Guardado choto;
     public GameObject Jugador1; // Asignar el gameobject del personaje en inspector. Aparentemente la única manera de hacerlo sin que sea demasiado complicado
     public int puntaje;
     public Text contador;
@@ -27,10 +27,13 @@ public class Display : MonoBehaviour
     public AudioSource audioMenuPausa;
     public AudioClip audioVictoria;
 
+    private void Awake() {
+        choto = FindObjectOfType<Guardado>();
+    }
     public void Update() {
 
         if(mp.isGameRunning()) {
-            if(Jugador1 != null)
+            if(Jugador1.activeSelf)
                 {
                 salud = Jugador1.GetComponent<Jugador>().salud;
                 puntaje = Jugador1.GetComponent<Jugador>().puntajeJugador;
@@ -78,6 +81,9 @@ public class Display : MonoBehaviour
                     if(tiempo2 >= 3f) {
                         menuDerrota.SetActive(true);
                         puntosFinal.text = "Puntaje Final: " + puntaje.ToString();
+                        if(Jugador1 != null)
+                            Destroy(Jugador1);
+
                     }
                     else {
                         tiempo2 += Time.deltaTime;
@@ -101,13 +107,16 @@ public class Display : MonoBehaviour
 
     public void reintentar(string nivel) {
         SceneManager.LoadScene(nivel);
+        choto.cargarashe();
     }
 
     public void volverAlNexo() {
+        
         SceneManager.LoadScene("Nexo");
     }
 
     public void volverAlMenu() {
+        
         SceneManager.LoadScene("MenuPrincipal");
     }
 
